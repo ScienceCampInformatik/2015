@@ -1,18 +1,25 @@
 
-function template(context){
-    var source   = $("#entry-template").html();
-    _template = Handlebars.compile(source);
-    return _template(context);
-}
-
 var entries = [
     {
-      name: "Auberginen",
-      month: 6
+      name: "Erwin Schrödinger",
+      month: 8,
+      date: "12.8.1887",
+      src: "http://pix.echtlustig.com/1212/schroedingers-katze-ist-am-leben-und-sehr-wuetend.jpg"
+    },
+    {
+      name: "Alfred Hitchcock",
+      month: 8,
+      date: "13.8.1999",
+      src: "http://i.imgur.com/97GEkeY.jpgy"
     }
  ];
-
-for (var i = 0; i < entries.length; i++){
-  if (entries[i].month == moment().month() + 1){
-    $("#birthdays").append(template(entries[i]));
-  }
+ var now = new Date();
+ 
+ 
+function birth(){
+	for (var i = 0; i < entries.length; i++){
+	  if (entries[i].month == now.getMonth() + 1){
+			document.write("<li><img  src=\"" + entries[i].src +"\" style=\"width:600px;\"> <p>"+entries[i].name+" "+entries[i].date+"</p> </li>");
+	  }
+	}
+}
