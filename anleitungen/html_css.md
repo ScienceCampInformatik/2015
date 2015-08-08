@@ -131,13 +131,105 @@ Es gibt auch weitere Tags für Text wie zum Beispiel `<strong> text </strong>` o
 Webseiten bestehen üblicherweise aus mehr als nur Text. Moderne Webseiten haben Bilder, Links oder Listen.
 
 ### Bilder
-TODO
+Bilder kann man wie folgt einfügen:
+
+```
+<img src="PFAD_ZUM_BILD"/>
+```
+
+Der Pfad zum Link ist eine Angabe, wo sich das Bild befindet.
+
+Beispiel:
+Wenn diese HTML Datei und das Bild im gleichen Ordner sind, also so:
+
+```
+irgendein Ordner
+├── index.html
+└── bild.jpg
+```
+dann wäre das Bild so aufzurufen: `<img src="bild.jpg"/>`
+
+Wenn diese HTML Datei in einem Ordner ist, in dem sich ein weiterer Ordner `bilder` befindet, in dem bilder drin sind, also so:
+
+```
+irgendein Ordner
+├── index.html
+└── Ordner
+    └── bild.jpg
+```
+dann wäre das Bild so aufzurufen: `<img src="bilder/bild.jpg"/>`
+
+Du kannst alle möglichen Bildformate benutzen. Es funktioniert zum Beispiel auch mit `.gif` oder `.png`-Dateien.
+
+![](bilder/bild.gif)
+
+Du kannst auch auf Bilder von anderen Webseiten zugreifen.
+
+Auf `https://33.media.tumblr.com/84cc72a0291e73ceec2cc06db557b918/tumblr_nl86t1fj2w1qhy6c9o1_r2_1280.gif` ist zum Beispiel ein Bild. Um dieses anzuzeigen, kannst du lediglich den Link einfügen, also:
+
+`<img src="https://33.media.tumblr.com/84cc72a0291e73ceec2cc06db557b918/tumblr_nl86t1fj2w1qhy6c9o1_r2_1280.gif"/>`
+
+<img src="https://33.media.tumblr.com/84cc72a0291e73ceec2cc06db557b918/tumblr_nl86t1fj2w1qhy6c9o1_r2_1280.gif"/>
+
+Falls du deine Webseite mal online stellst, solltest du das allesdings aus verschiedenen Gründen (z.B. Copyright) vermeiden. Für den kleinen persönlichen Gebrauch ist es aber erstmal ok.
 
 ### Links
-TODO
+Webseiten brauchen natürlich auch Links zu anderen Webseiten:
+
+```
+<a href="PFAD_ZUM_LINK"> Text </a>
+```
+Auch hier gilt wie bei Bildern: Du kannst du externen Links verlinken oder auch eine eigene HTML-Seite mit dem Pfad angeben:
+
+`<a href="https://de.wikipedia.org/wiki/Hyperlink"> Wikieintrag zu Hyperlinks </a>`
+
+<a href="https://de.wikipedia.org/wiki/Hyperlink"> Wikieintrag zu Hyperlinks </a>
+
+Der Inhalt innerhalb des a-Tags ist der Teil, der dann anklickbar ist und zum Link führt.
+Du kannst auch Bilder als Link benutzen:
+
+```
+<a href="https://de.wikipedia.org/wiki/Haushund"> 
+    <img src="bilder/link.gif"/>
+</a>
+```
+
+<a href="https://de.wikipedia.org/wiki/Haushund"> 
+    <img src="bilder/link.gif"/>
+</a>
+
+Wie du merkst, öffnet sich der Link direkt im aktuellen Tab oder Fenster. Manchmal (vor allem bei Links zu externen Seiten), möchte man den Link lieber in einem neuen Tag öffnen. 
+Setze dafür ein `target`, also ein Ziel:
+
+```
+<a href="https://de.wikipedia.org/wiki/Hyperlink" target="_blank"> 
+    Wikieintrag zu Hyperlinks 
+</a>
+```
+<a href="https://de.wikipedia.org/wiki/Hyperlink" target="_blank"> 
+    Wikieintrag zu Hyperlinks 
+</a>
+
 
 ### Listen
-TODO
+Listen macht man mit einem ul-Tag und jeder einzelne Bulletpoint wird mit einem li-Tag beschrieben. So sieht das dann aus:
+
+```
+Einkaufsliste
+<ul>
+    <li> Eiscreme </li>
+    <li> Smoothie </li>
+    <li> Kekse </li>        
+</ul>
+```
+
+Einkaufsliste
+<ul>
+    <li> Eiscreme </li>
+    <li> Smoothie </li>
+    <li> Kekse </li>        
+</ul>
+
 
 ## Glückwunsch! 
 **Du kannst nun alle Basics für HTML <3**
@@ -147,6 +239,16 @@ Aber ehrlich gesagt sieht unsere Webseite noch nicht wirklich schön aus. Wir k�
 # CSS
 
 # Sonstiges
+## Embeddings
+Viele Seiten bieten dir oftmals sogenannte _Embed_-Möglichkeiten an um gewissen Sachen auf deiner eigenen Webseite anzuzeigen.
+Auf YouTube kann man zum Beispiel jedes Video einfügen:
+
+![](bilder/youtube.png)
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/nGeKSiCQkPw" frameborder="0" allowfullscreen></iframe>
+
+**Füge dein Lieblings-YouTube Video ein.**
+
 ## <!DOCTYPE html>
 HTML ist eine Markup Language. Neben HTML gibt es weitere, andere Markup Languages. Du erkennst diese, dass sie immer Bereiche mit Tags und spitzen Klammern verwenden. Eigentlich muss man daher immer am Anfang der Datei sagen, um was für eine Markup Language es sich handelt. Richtig wäre daher:
 

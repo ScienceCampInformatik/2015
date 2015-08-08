@@ -16,6 +16,7 @@
     * Vorkenntnisse
 * Wochenplan & mögliches Ergebnis am Freitag 
     * SAP! BAHNHOF! 8! 
+    * Kommunikationsmöglichkeit
 * Präsentation
     1. SAP
     2. Klinikum
