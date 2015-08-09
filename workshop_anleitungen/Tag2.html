@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>
-    Willkommen auf meiner Website
+    Javascript
     </title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style_template.css"/>
+    <meta charset="utf-8">
 
     <!-- Bildergallerie -->
     <script src="js/bilder.js"></script>
@@ -20,27 +21,26 @@
 <body>
     <div class="menu">
         <ul>
-            <li class="tag"><a href="../../workshop_anleitungen/tag1-0html.html">Tag 1</a></li>
+            <li class="tag"><a href="tag1-0html.html">Tag 1</a></li>
             <li class="tag current"><a>Tag 2</a></li>
         </ul>
     </div>
     <div class="container">
         <h1>
-           Tag 2
+          Javascript
         </h1>
         <p>
-        	<h2> Javascript </h2>
-   			<h3>Was ist Javascript &uuml;berhaupt? </h3>
+   			<h2>Was ist Javascript &uuml;berhaupt? </h2>
+   			<p>
 		       Javascript ist wie der Name schon sagt eine Skriptspache, das hei&szlig;t in  etwa eine Sprache die f&uuml;r kurze kleine
-		       Programme gedacht ist.
-		   	<h3>Wozu braucht man Javascript? </h3>
-		   	   Das meiste im Internet, das sich bewegt oder mit dem ihr interagien k&ouml;nnt ist in Javascript geschrieben.
-
-            <h3>Was ist wichtig?</h3>
-            	<h4> Wie binde ich meine Javascript-Datei in mein HTML ein? </h4>
+		       Programme gedacht ist. JAvascript ist insbesondere dafür gedacht in Browsern eingesetzt zu werden, 
+		       um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die 
+		       Möglichkeiten von HTML und CSS zu erweitern. Kurz gesagt um Internetseiten interaktiver zu machen. </p>
+            <h2>Was ist wichtig?</h2>
+            	<h3> Wie binde ich meine Javascript-Datei in mein HTML ein? </h3>
             	<p> du schreibst oben in die head tags den Pfad zu deiner Javascript-Datei als source in script tags. Das sieht dann zum Beispiel so aus:</p>
             	<p><strong>&lt;script </strong> <strong style="color:#26A65B"> src="js/bilder.js" </strong><strong>&gt;&lt;/script&gt;</strong></p>
-            	<h4> Variablen: </h4>
+            	<h3> Variablen: </h3>
             	<p>
             	Variablen sind sowas wie Beh&auml;lter f&uuml;r Werte, zum Beispiel f&uuml;r Zahlen oder W&ouml;rter.
             	Durch das Schl&uuml;sselwort <strong style="color:#D24D57"> var </strong> legt man die folgende Zeichenkette als Variable fest.
@@ -62,7 +62,7 @@
 
             	 <button onclick="change()">Change name </button>
 
-            	<h4> If-Abfragen </h4>
+            	<h3> If-Abfragen </h3>
             	<p>
             	 If-Abfragen f&uuml;hren einen Teil Code aus falls eine Bedingung zutrifft.
             	 <strong style="color:#D24D57"> if </strong> <strong style="color:#26A65B"> (number > 7) </strong> <strong> {...}</strong>
@@ -76,7 +76,7 @@
             	 <button onclick="kitty(); return false;">Magst du Katzen?</button>
             	 <img  id=cat src=http://bit.ly/1OVjZrb style="height:400px;">
 
-            	 <h4>Schleifen </h4>
+            	 <h3>Schleifen </h3>
             	 <p>
             	 Schleifen benutzt man dann, wenn man ein St&uuml;ck Code mehrmals ausf&uuml;hren m&ouml;chte. Es gibt verschiede Arten von Schleifen
             	 aber f&uuml;r die meisten F&auml;lle reicht eine for-Schleife. Die Schleife hat eine Laufvariable, die meistens
@@ -96,7 +96,7 @@
 
 
 
-            	 <h4> Funktionen </h4>
+            	 <h3> Funktionen </h3>
             	 <p>
             	 Funktionen sind Codeabschnitte, das wesentliche an ihnen ist, dass man ihnen Parameter &uuml;bergeben kann und sie ein Ergebnis
             	 zur&uuml;ckgeben k&ouml;nnen. Eine einfache Funktion w&auml;re zum Beispiel: </p>
@@ -104,7 +104,7 @@
             	 <strong style="color:#26A65B"> (num1, num2) </strong> <strong> {</strong>  <strong style="color:#0066FF"> 	return </strong><strong> num1 + num2; }</strong> </p>
             	 Diese Funktion add &uuml;bernimmt zwei Variablen num1 und num2 als &uuml;bergabeparameter und gibt ihre Summe zur&uuml;ck.
 
-            	<h4> Funktionsaufrufe </h4>
+            	<h3> Funktionsaufrufe </h3>
 
 				<p> Die Funktionen die wir gerade kennengelernt haben muss man auch aufrufen. 
 				Zum einen kann man natürlich Funktionen direkt im Javascript aufrufen. Dazu schreibt man einfach den Funktionsnamen und in 
@@ -128,7 +128,7 @@
 				 die man aufrufen möchte zwischen die tags schreiben. Aber das wird sehr schnell unübersichtlich und macht es schwer Funktionen 
 				 wiederzuverwenden.</p>
 
-				<h4> Arrays </h4>
+				<h3> Arrays </h3>
 				<p>
 				Arrays sind eine Art Tabelle in der viele Daten  liegen, also zum Beipiel viele Zahlen oder W&ouml;rter.
 				Anlegen lassen sich Arrays &auml;hnlich zu anderen Variablen:
