@@ -37,6 +37,9 @@
 		   	   Das meiste im Internet, das sich bewegt oder mit dem ihr interagien k&ouml;nnt ist in Javascript geschrieben.
 
             <h3>Was ist wichtig?</h3>
+            	<h4> Wie binde ich meine Javascript-Datei in mein HTML ein? </h4>
+            	<p> du schreibst oben in die head tags den Pfad zu deiner Javascript-Datei als source in script tags. Das sieht dann zum Beispiel so aus:</p>
+            	<p><strong>&lt;script </strong> <strong style="color:#26A65B"> src="js/bilder.js" </strong><strong>&gt;&lt;/script&gt;</strong></p>
             	<h4> Variablen: </h4>
             	<p>
             	Variablen sind sowas wie Beh&auml;lter f&uuml;r Werte, zum Beispiel f&uuml;r Zahlen oder W&ouml;rter.
@@ -102,12 +105,28 @@
             	 Diese Funktion add &uuml;bernimmt zwei Variablen num1 und num2 als &uuml;bergabeparameter und gibt ihre Summe zur&uuml;ck.
 
             	<h4> Funktionsaufrufe </h4>
-				<p> Die Funktionen die wir gerade kennengelernt haben muss man auch aufrufen. Diese Aufrufe verkn&uuml;pft man bei der
-				Entwicklung von Webanwendungen meistens mit sogenannten Events. Zum Beispiel ist ein Mausclick ein solches Event.
-				hat man zum Beispiel einen Button designed m&ouml;chte und m&ouml;chte man das beim klicken auf diesen Button die Funktion
+
+				<p> Die Funktionen die wir gerade kennengelernt haben muss man auch aufrufen. 
+				Zum einen kann man natürlich Funktionen direkt im Javascript aufrufen. Dazu schreibt man einfach den Funktionsnamen und in 
+				Klammern dahinter die Parameter, die man übergeben möchte. Aber Achtung die Reihenfolge der Parameter ist wichtig und immer 
+				so, wie man sie in der Methodendefinition geschrieben hat. Ein solcher Aufruf würde dann so aussehen:</p>
+				<p> <strong> add(7,9);</strong></p>
+				<p>Hier würde 7 also in num1 und 9 in num2 gespeichert werden.</p>
+				
+				<p>   
+				MAn kann Javascript Funktionen auch im HTML-Code aufrufen, 
+				meistens tut man das mit sogenannten Events. Hat man einen Button designed und m&ouml;chte 
+				man das beim klicken auf diesen Button die Funktion 
 				<strong>next()</strong> aufgerufen wird, so sieht der zugeh&ouml;rige Code wie Folgt aus: </p>
-				<p><strong>&lt;div </strong><strong style="color:#D24D57"> onclick</strong><strong>=</strong>
-				<strong style="color:#26A65B"> &quot;next()&quot;</strong> <strong>&gt;next&lt;/div&gt;</strong></p>
+				<p><strong>&lt;div </strong><strong style="color:#D24D57"> onclick</strong><strong>=</strong> 
+				<strong style="color:#26A65B"> &quot;next()&quot;</strong> <strong>&gt;next&lt;/div&gt;</strong></p> 
+				<p>Hier verwendet man das onclick-Event, dieses findet immer dann statt wenn auf das zugehörige HTML-Element geklickt wurde.</p>
+				<p>Möchte man dass eine Funktion direkt beim laden der Seite aufgerufen wird, so kann man sie auch in script tags an die 
+				gewünschte Stelle schreiben. Zum Beispiel so: </p>
+				<p><strong>&lt;script &gt;</strong><strong style="color:#26A65B">next();</strong><strong>&lt;/script&gt;</strong></p>
+				<p>Diese script tags geben an das zwischen ihnen Javascript-Code steht. Man könnte also auch den Code der Funktion,
+				 die man aufrufen möchte zwischen die tags schreiben. Aber das wird sehr schnell unübersichtlich und macht es schwer Funktionen 
+				 wiederzuverwenden.</p>
 
 				<h4> Arrays </h4>
 				<p>
