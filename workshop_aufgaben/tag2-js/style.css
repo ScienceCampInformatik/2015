@@ -3,63 +3,24 @@ body {
     background-image: url(hintergruende/congruent_pentagon.png);
     /* Background pattern from subtlepatterns.com */
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
 }
 
-/************************* MENÜLEISTE **************************/
 .menu {
-    /* Klebe das Menu oben fest */
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-
-    /* design */
+    display: table; 
+    height: 40px; 
+    overflow: hidden;
     background: #111111;
-    opacity: 0.9;
-    z-index: 1;
-
-    text-align: center;
-}
-.menu ul {
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    list-style:none;
-}
-
-.menu ul li {
-    float: left;
-}
-
-.menu ul a {
-    display: block;
-    text-decoration:none;
     color: #DDDDDD;
-    text-align:center;
-    padding: 8px 10px;
-}
-
-.menu ul .tag a {
-    margin-left: 30px;
-}
-
-.menu ul a:hover {
-    /* Verändere den Hintergrund, wenn man mit der Maus über dem Link ist*/
-    background: #333333;
-}
-
-.menu .parts a {
-    color: #ffffff;
-}
-
-.menu ul .current a:hover {
-    background: #111111;
-}
-
-.menu .tag a {
-    color: #F9690E;
+    opacity: 0.9;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
 }
 
 .center {
@@ -67,7 +28,7 @@ body {
 }
 
 .helper_menu {
-    display: table-cell;
+    display: table-cell; 
     vertical-align: middle;
 }
 

@@ -45,12 +45,28 @@ a {
     text-decoration:none;
     color: #DDDDDD;
     text-align:center;
-    padding: 8px 30px;
+    padding: 8px 10px;
+}
+
+.menu ul .tag a {
+    margin-left: 30px;
 }
 
 .menu ul a:hover {
     /* Verändere den Hintergrund, wenn man mit der Maus über dem Link ist*/
     background: #333333;
+}
+
+.menu .parts a {
+    color: #ffffff;
+}
+
+.menu ul .current a:hover {
+    background: #111111;
+}
+
+.menu .tag a {
+    color: #F9690E;
 }
 
 .container {
@@ -77,6 +93,11 @@ code {
 
 .aufgabe {
     color: #03A678;
+}
+
+.weiter a {
+    font-size: 1.1em;
+    color: #F9690E;
 }
 
 hr {
