@@ -23,6 +23,7 @@ html,body {
     background: #111111;
     opacity: 0.9;
     z-index: 1;
+    color: white;
 
     text-align: center;
 }
@@ -48,6 +49,11 @@ html,body {
 .menu ul a:hover {
     /* Verändere den Hintergrund, wenn man mit der Maus über dem Link ist*/
     background: #333333;
+}
+
+.menu ul a:visited {
+    /* Verändere den Hintergrund, wenn man mit der Maus über dem Link ist*/
+    background: #333FFF;
 }
 
 

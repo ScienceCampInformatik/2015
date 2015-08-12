@@ -1,42 +1,41 @@
-
-var name = "Lena";
-
+var name= "Lena";
 
 function show(){
-	document.getElementById("demo").textContent= name ;
-} 
+	document.getElementById("name").textContent = name;
+
+}
 
 function change(){
-	name = prompt("Und dein ganzer Name?","");
+	name = prompt("Ändere name!","");
 }
 
-
-var cat= "Vielleicht";
-
-function kitty(){
-	cat = prompt("Magst du Katzen?","");
-	if(cat == "Ja" ){
-	document.getElementById("cat").src="http://stuffpoint.com/cats/image/104659-cats-cute-cat.jpg";
+function hund(){
+	var antwort = prompt("Magst du Hunde?","Ja oder Nein");
+	
+	if(antwort == "Ja" || antwort == "Vielleicht"){
+		document.getElementById("bild").src="http://www.testedich.de/quiz37/picture/pic_1434894316_2.jpg";
 	}else{
-	document.getElementById("cat").src="http://i.dailymail.co.uk/i/pix/2014/08/05/1407225932091_wps_6_SANTA_MONICA_CA_AUGUST_04.jpg";
+		document.getElementById("bild").src="http://www.lindermanns-tierwelt.de/wp-content/uploads/Hund-h%C3%B6rt-nicht%C2%A9-Andres-Rodriguez-Fotolia.com_.jpg";
+	
 	}
 	
-}
-
-
-function calc(){
-	var sum = 0;
-	for(var i = 1; i<=100; i++){
-		sum += i;
-	}
-	document.getElementById("sum").textContent = sum;
 
 }
 
-var id=0;
-var array=[1,2,3,4,5,6,7,8,9];
+function summe(){
+ var erg = 0;
+ for(var i = 1; i<= 100; i++){
+ 	erg += i;
+ }
+ document.getElementById("Summe").textContent=erg;
 
-function getelem(){
-	id = prompt("Welches Element willst du?", "Gib eine Zahl zwischen 0 und " + (array.length -1) + " ein.")
-	document.getElementById("elem").textContent = "Das " + id + "-te Element ist: " + array[id];
+}
+
+var zahlen = [ 1, 2, 4, 7, 8];
+
+function arrayelem(){
+	var id;
+	id = prompt("Gibt eine Zahl ein","Gibt eine Zahl zwischen 0 und "+ (zahlen.length -1) +" ein");
+	
+	document.getElementById("array").textContent = "Das "+ id + "-te Element ist: " + zahlen[id];
 }
