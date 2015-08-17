@@ -4,7 +4,7 @@ var name = "Lena";
 
 function show(){
 	document.getElementById("demo").textContent= name ;
-} 
+}
 
 function change(){
 	name = prompt("Und dein ganzer Name?","");
@@ -20,13 +20,13 @@ function kitty(){
 	}else{
 	document.getElementById("cat").src="http://i.dailymail.co.uk/i/pix/2014/08/05/1407225932091_wps_6_SANTA_MONICA_CA_AUGUST_04.jpg";
 	}
-	
+
 }
 
 
 function calc(){
 	var sum = 0;
-	for(var i = 1; i<=100; i++){
+	for(var i = 1; i<=100; i = i + 1){
 		sum += i;
 	}
 	document.getElementById("sum").textContent = sum;
